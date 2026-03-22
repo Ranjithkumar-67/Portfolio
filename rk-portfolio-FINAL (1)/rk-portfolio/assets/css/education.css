@@ -1,0 +1,18 @@
+/* ═══ EDUCATION.CSS ══════════════════════ */
+.edu-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 1.4rem; }
+.edu-card { background: var(--bg-card); border: 1px solid var(--border); padding: 2rem; transition: transform 0.3s, box-shadow 0.3s; position: relative; overflow: hidden; }
+.edu-card:hover { transform: translateY(-4px); box-shadow: 0 0 32px rgba(0,212,255,0.09); }
+.edu-yr { font-family: var(--f-mono); font-size: 0.62rem; text-transform: uppercase; letter-spacing: 0.15em; color: var(--accent-c); margin-bottom: 0.7rem; }
+.edu-inst { font-family: var(--f-display); font-weight: 700; font-size: 0.98rem; color: var(--text-1); margin-bottom: 0.3rem; }
+.edu-deg { font-size: 0.83rem; color: var(--text-2); font-weight: 300; margin-bottom: 1rem; line-height: 1.5; }
+.edu-score { font-family: var(--f-display); font-weight: 900; font-size: 1.8rem; letter-spacing: -0.02em; color: var(--accent-o); }
+.edu-score span { font-size: 0.75rem; color: var(--text-3); font-family: var(--f-mono); }
+
+.certs-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(270px, 1fr)); gap: 1rem; }
+.cert-card { background: var(--bg-card); border: 1px solid var(--border); padding: 1.4rem; display: flex; gap: 0.9rem; transition: all 0.2s; }
+.cert-card:hover { border-color: var(--border-hl); transform: translateX(4px); }
+.cert-icon { font-size: 1.7rem; flex-shrink: 0; width: 46px; height: 46px; display: flex; align-items: center; justify-content: center; background: var(--bg-2); }
+.cert-name { font-family: var(--f-body); font-weight: 600; color: var(--text-1); font-size: 0.88rem; margin-bottom: 0.2rem; }
+.cert-by { font-size: 0.76rem; color: var(--text-3); font-weight: 300; }
+
+@media (max-width: 700px) { .edu-grid { grid-template-columns: 1fr; } }

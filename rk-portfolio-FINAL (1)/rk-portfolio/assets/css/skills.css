@@ -1,0 +1,8 @@
+/* ═══ SKILLS.CSS ═══════════════════════ */
+.skills-table-wrap { overflow-x: auto; }
+.skills-tbl { width: 100%; }
+.skills-tbl td:first-child {
+  font-family: var(--f-mono); font-size: 0.7rem;
+  color: var(--accent-o); text-transform: uppercase;
+  letter-spacing: 0.1em; font-weight: 500; width: 180px;
+}

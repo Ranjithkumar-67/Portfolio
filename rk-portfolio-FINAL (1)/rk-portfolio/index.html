@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Ranjithkumar R — Structural Engineer & IT Developer. B.E. Civil Engineering, KEC Erode. Portfolio showcasing civil, research and software projects." />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:title" content="Ranjithkumar R — Engineer & Developer" />
+  <meta property="og:description" content="Structural Engineering meets IT Development. Futuristic Portfolio." />
+  <meta property="og:image" content="assets/images/rk-photo.jpg" />
+  <title>Ranjithkumar R · Engineer & Developer</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;900&family=Rajdhani:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500;700&display=swap" rel="stylesheet" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="assets/css/tokens.css" />
+  <link rel="stylesheet" href="assets/css/base.css" />
+  <link rel="stylesheet" href="assets/css/nav.css" />
+  <link rel="stylesheet" href="assets/css/hero.css" />
+  <link rel="stylesheet" href="assets/css/about.css" />
+  <link rel="stylesheet" href="assets/css/skills.css" />
+  <link rel="stylesheet" href="assets/css/projects.css" />
+  <link rel="stylesheet" href="assets/css/research.css" />
+  <link rel="stylesheet" href="assets/css/leadership.css" />
+  <link rel="stylesheet" href="assets/css/education.css" />
+  <link rel="stylesheet" href="assets/css/contact.css" />
+  <link rel="stylesheet" href="assets/css/popup.css" />
+  <link rel="stylesheet" href="assets/css/footer.css" />
+</head>
+<body>
+
+  <!-- SOURCE PROTECTION OVERLAY -->
+  <div id="sourceGuard" class="source-guard"></div>
+
+  <!-- CUSTOM CURSOR -->
+  <div id="curRing" class="cur-ring"></div>
+  <div id="curDot"  class="cur-dot"></div>
+
+  <!-- RIGHT-CLICK BLOCKED POPUP -->
+  <div id="rcPopup" class="rc-popup">
+    <div class="rc-popup-inner">
+      <div class="rc-icon">🔒</div>
+      <h3>Source Protected</h3>
+      <p>This portfolio's source code is private.<br>For inquiries or collaboration, contact:</p>
+      <a href="mailto:ranjithrajendran2510@gmail.com" class="rc-btn">ranjithrajendran2510@gmail.com</a>
+      <button class="rc-close" onclick="document.getElementById('rcPopup').classList.remove('show')">✕ Close</button>
+    </div>
+  </div>
+
+  <!-- WELCOME POPUP (first visit) -->
+  <div id="welcomePopup" class="welcome-popup">
+    <div class="welcome-inner">
+      <div class="welcome-badge">// WELCOME</div>
+      <h2>RANJITHKUMAR R</h2>
+      <p class="welcome-role">Structural Engineer &amp; IT Developer</p>
+      <p class="welcome-quote">"Never let the fear of striking out stop you from playing the game."</p>
+      <p class="welcome-note">This portfolio is best viewed on desktop for the full futuristic experience.</p>
+      <button class="welcome-btn" id="welcomeEnter">⚡ Enter Portfolio</button>
+    </div>
+  </div>
+
+  <!-- NAVIGATION -->
+  <nav id="mainNav">
+    <a href="#hero" class="nav-brand">
+      <span class="brand-dot"></span>RK<span class="brand-slash">//</span>PORTFOLIO
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#research">Research</a></li>
+      <li><a href="#leadership">Experience</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li class="nav-theme-wrap">
+        <button class="theme-toggle-btn" id="themeToggle" title="Toggle Dark/Light Theme">
+          <span class="theme-icon" id="themeIcon">☀</span>
+          <span class="toggle-track"><span class="toggle-thumb"></span></span>
+          <span class="theme-label" id="themeLabel">LIGHT</span>
+        </button>
+      </li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- MAIN CONTENT -->
+  <main>
+
+    <!-- ① HERO -->
+    <section id="hero">
+      <div class="hero-hex-bg"></div>
+      <div class="hero-particles" id="heroParticles"></div>
+      <div class="hero-content">
+        <div class="hero-eyebrow" id="heroTypewriter"></div>
+        <h1 class="hero-name">
+          RANJITH<span class="name-stroke">KUMAR R</span>
+        </h1>
+        <div class="hero-roles">
+          <span class="role-pill orange">🏗 Structural Engineer</span>
+          <span class="role-pill cyan">💻 IT Developer</span>
+          <span class="role-pill">📐 Concrete Technologist</span>
+          <span class="role-pill">🌐 Full Stack</span>
+          <span class="role-pill">📊 Project Manager</span>
+          <span class="role-pill">🤖 App Developer</span>
+        </div>
+        <p class="hero-bio">
+          B.E. Civil Engineering graduate from <strong>Kongu Engineering College, Erode</strong> — combining structural engineering precision with software development agility. I design structures by day and build systems by night.
+        </p>
+        <div class="hero-quote">"Never let the fear of striking out stop you from playing the game."</div>
+        <div class="hero-cta">
+          <a href="#projects" class="btn btn-primary">⚡ View Projects</a>
+          <a href="#contact" class="btn btn-secondary">📡 Hire Me</a>
+          <a href="https://in.linkedin.com/in/ranjithkumar-rajendran-b62a6024b" target="_blank" rel="noopener" class="btn btn-ghost">🔗 LinkedIn ↗</a>
+          <a href="https://ranjithkumar67.wordpress.com" target="_blank" rel="noopener" class="btn btn-ghost">🌐 Blog ↗</a>
+        </div>
+        <div class="hero-stats">
+          <div class="hstat"><span class="hstat-num cyan">7.59</span><span class="hstat-label">CGPA / 10</span></div>
+          <div class="hstat"><span class="hstat-num orange">7+</span><span class="hstat-label">Projects</span></div>
+          <div class="hstat"><span class="hstat-num cyan">3</span><span class="hstat-label">Papers / Research</span></div>
+          <div class="hstat"><span class="hstat-num orange">3</span><span class="hstat-label">Leadership Roles</span></div>
+          <div class="hstat"><span class="hstat-num cyan">6+</span><span class="hstat-label">Certifications</span></div>
+          <div class="hstat"><span class="hstat-num orange">3</span><span class="hstat-label">Yrs ISTE Active</span></div>
+        </div>
+      </div>
+      <!-- TERMINAL -->
+      <div class="hero-terminal">
+        <div class="term-bar">
+          <span class="td1"></span><span class="td2"></span><span class="td3"></span>
+          <span class="term-title">ranjith@portfolio:~$</span>
+        </div>
+        <div class="term-body" id="termBody"></div>
+      </div>
+    </section>
+
+    <!-- ② ABOUT -->
+    <section id="about">
+      <div class="sec-eyebrow">01 // About Me</div>
+      <h2 class="sec-title">The <span class="hl-c">Engineer</span> &amp; <span class="hl-o">Developer</span></h2>
+      <p class="sec-sub">Where load calculations meet lines of code — a commitment to innovation and sustainability.</p>
+      <div class="about-grid">
+        <!-- PHOTO -->
+        <div class="about-photo-col rv">
+          <div class="photo-frame">
+            <div class="photo-ring"></div>
+            <div class="photo-hex">
+              <img src="assets/images/rk-photo.jpg" alt="Ranjithkumar R — Civil Engineer" class="rk-photo" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+              <div class="photo-fallback">RK</div>
+            </div>
+          </div>
+          <div class="photo-status">
+            <span class="status-dot"></span>
+            <span class="status-text">Available for opportunities</span>
+          </div>
+          <div class="info-chips">
+            <span class="chip">📍 Namakkal, TN</span>
+            <span class="chip">🎓 KEC Erode</span>
+            <span class="chip">📅 Batch 2025</span>
+            <span class="chip">🔬 IISc Selected</span>
+            <span class="chip">🏙 Air Brick Infra</span>
+          </div>
+        </div>
+        <!-- TEXT -->
+        <div class="about-text-col rv d1">
+          <h3>A commitment to innovation and sustainability</h3>
+          <p>I'm <strong>Ranjithkumar R</strong>, a highly motivated and results-oriented Civil Engineering graduate with a strong academic background and a passion for sustainable construction practices. I intend to remain the best professional and personal self while contributing an essential contribution to society — in an environment which promotes the application of knowledge acquired to improve abilities and expertise toward organization growth.</p>
+          <p>Experienced in <strong>research, project management, and leadership roles</strong>, I have actively participated in designing and executing innovative construction projects that prioritize environmental responsibility and cost-efficiency. My coursework and hands-on experience have honed technical skills in <strong>structural design, urban planning, and infrastructure development</strong>.</p>
+          <p>On the software side, I build applications with Python, C/C++, full-stack web technologies, and MIT App Inventor — bridging the gap between civil engineering and digital technology.</p>
+          <div class="about-highlights">
+            <div class="hl-item">
+              <span class="hl-icon">🏛</span>
+              <div><strong>IISc Bangalore</strong><br><small>Selected &amp; Waitlisted for Research Internship</small></div>
+            </div>
+            <div class="hl-item">
+              <span class="hl-icon">🏙</span>
+              <div><strong>Air Brick Infra, New Delhi</strong><br><small>Selected — Interior Designing &amp; Sales</small></div>
+            </div>
+            <div class="hl-item">
+              <span class="hl-icon">🎓</span>
+              <div><strong>ISTE-KEC Students Chapter</strong><br><small>Chairperson 2024–2025</small></div>
+            </div>
+          </div>
+          <table class="info-table rv d2">
+            <tr><td class="ik">Phone</td><td><a href="tel:+919597928987">+91 9597928987</a></td></tr>
+            <tr><td class="ik">WhatsApp</td><td><a href="https://wa.me/+919597928987" target="_blank">wa.me/+919597928987 ↗</a></td></tr>
+            <tr><td class="ik">Email</td><td><a href="mailto:ranjithrajendran2510@gmail.com">ranjithrajendran2510@gmail.com</a></td></tr>
+            <tr><td class="ik">LinkedIn</td><td><a href="https://in.linkedin.com/in/ranjithkumar-rajendran-b62a6024b" target="_blank">View Profile ↗</a></td></tr>
+            <tr><td class="ik">Blog</td><td><a href="https://ranjithkumar67.wordpress.com" target="_blank">ranjithkumar67.wordpress.com ↗</a></td></tr>
+            <tr><td class="ik">Location</td><td>Namakkal, Tamil Nadu · Open to Relocation</td></tr>
+            <tr><td class="ik">Availability</td><td style="color:var(--accent-g)">✅ Available Now</td></tr>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- ③ SKILLS -->
+    <section id="skills">
+      <div class="sec-eyebrow">02 // Skills &amp; Toolkit</div>
+      <h2 class="sec-title">My <span class="hl-c">Expertise</span></h2>
+      <p class="sec-sub">Core civil engineering competencies combined with modern software development skills.</p>
+      <div class="skills-table-wrap rv">
+        <table class="skills-tbl">
+          <thead>
+            <tr>
+              <th>Category</th>
+              <th>Skills</th>
+              <th>Level</th>
+              <th>Domain</th>
+            </tr>
+          </thead>
+          <tbody id="skillsBody"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ④ PROJECTS -->
+    <section id="projects">
+      <div class="sec-eyebrow">03 // Projects</div>
+      <h2 class="sec-title">What I've <span class="hl-o">Built</span></h2>
+      <p class="sec-sub">Civil engineering projects, software applications, and AI-assisted tools — each unique, no duplicates.</p>
+      <div class="proj-tabs rv" id="projTabs"></div>
+      <div id="projGrid" class="proj-grid"></div>
+    </section>
+
+    <!-- ⑤ RESEARCH -->
+    <section id="research">
+      <div class="sec-eyebrow">04 // Research &amp; Papers</div>
+      <h2 class="sec-title">Published <span class="hl-c">Work</span></h2>
+      <p class="sec-sub">Peer-reviewed conference papers in structural materials and sustainable construction.</p>
+      <div class="research-papers rv" id="researchPapers"></div>
+      <div class="sec-eyebrow" style="margin-top:4rem;margin-bottom:1.2rem;">Research Interest Areas</div>
+      <div class="rv">
+        <table class="res-area-tbl">
+          <thead><tr><th>Research Area</th><th>Domain</th><th>Focus</th><th>Status</th></tr></thead>
+          <tbody id="resAreaBody"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ⑥ LEADERSHIP / EXPERIENCE -->
+    <section id="leadership">
+      <div class="sec-eyebrow">05 // Leadership &amp; Experience</div>
+      <h2 class="sec-title">Roles &amp; <span class="hl-o">Responsibilities</span></h2>
+      <p class="sec-sub">Three years of institutional leadership — fostering a welcoming and supportive learning environment.</p>
+      <div class="timeline" id="timeline"></div>
+    </section>
+
+    <!-- ⑦ EDUCATION -->
+    <section id="education">
+      <div class="sec-eyebrow">06 // Education</div>
+      <h2 class="sec-title">Academic <span class="hl-c">Journey</span></h2>
+      <div class="edu-grid rv" id="eduGrid"></div>
+      <div class="sec-eyebrow" style="margin-top:4rem;margin-bottom:1.5rem;">Certifications &amp; Achievements</div>
+      <div class="certs-grid" id="certsGrid"></div>
+    </section>
+
+    <!-- ⑧ CONTACT -->
+    <section id="contact">
+      <div class="sec-eyebrow">07 // Contact</div>
+      <h2 class="sec-title">Let's <span class="hl-c">Connect</span></h2>
+      <p class="sec-sub">Open for structural engineering roles, software positions, research collaborations and internships.<br>Monday – Friday [ 8 AM – 5 PM ]</p>
+      <div class="contact-wrap">
+        <div class="contact-left rv">
+          <h3>Ranjithkumar R</h3>
+          <p>I'm actively seeking opportunities in structural engineering, BIM, project management, or software development. Whether you have a position, a collaboration, or just want to discuss engineering — reach out anytime.</p>
+          <ul class="contact-links" id="contactLinks"></ul>
+          <div class="contact-socials">
+            <a href="https://in.linkedin.com/in/ranjithkumar-rajendran-b62a6024b" target="_blank" class="social-btn">LinkedIn</a>
+            <a href="https://wa.me/+919597928987" target="_blank" class="social-btn orange">WhatsApp</a>
+            <a href="https://ranjithkumar67.wordpress.com" target="_blank" class="social-btn">Blog</a>
+            <a href="mailto:ranjithrajendran2510@gmail.com" class="social-btn green">Email</a>
+          </div>
+          <div class="reference-card">
+            <div class="ref-tag">// Academic Reference</div>
+            <div class="ref-name">Dr. V. Sampathkumar</div>
+            <div class="ref-info">
+              Asst. Professor · Dept. of Civil Engineering<br>
+              Kongu Engineering College, Erode<br>
+              <a href="tel:9047151001">9047151001</a> ·
+              <a href="mailto:anbusampathcivil@gmail.com">anbusampathcivil@gmail.com</a>
+            </div>
+          </div>
+        </div>
+        <div class="contact-right rv d1">
+          <div class="form-card">
+            <div class="form-header">// Send Me a Message</div>
+            <form id="contactForm" onsubmit="submitContactForm(event)">
+              <div class="form-group">
+                <label>Your Name *</label>
+                <input type="text" id="fc-name" placeholder="John Smith" required />
+              </div>
+              <div class="form-group">
+                <label>Email Address *</label>
+                <input type="email" id="fc-email" placeholder="john@company.com" required />
+              </div>
+              <div class="form-group">
+                <label>Phone (Optional)</label>
+                <input type="tel" id="fc-phone" placeholder="+91 XXXXX XXXXX" />
+              </div>
+              <div class="form-group">
+                <label>Subject *</label>
+                <select id="fc-subject" required>
+                  <option value="">— Select Subject —</option>
+                  <option>Job Opportunity</option>
+                  <option>Research Collaboration</option>
+                  <option>Project Inquiry</option>
+                  <option>Internship</option>
+                  <option>General Inquiry</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label>Message *</label>
+                <textarea id="fc-msg" rows="5" placeholder="Tell me about the opportunity..." required></textarea>
+              </div>
+              <button type="submit" class="form-submit">⚡ Send Message</button>
+              <div id="form-status" class="form-status"></div>
+            </form>
+            <div class="form-note">
+              📬 Messages go directly to ranjithrajendran2510@gmail.com via your email client.<br>
+              Or use Google Form:
+              <a href="https://forms.gle/REPLACE_WITH_YOUR_FORM_LINK" target="_blank">Click here ↗</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-brand">RK // RANJITHKUMAR R</div>
+      <div class="footer-tagline">Structural Engineer · IT Developer · KEC Erode · 2025</div>
+      <ul class="footer-links">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#research">Research</a></li>
+        <li><a href="https://in.linkedin.com/in/ranjithkumar-rajendran-b62a6024b" target="_blank">LinkedIn</a></li>
+        <li><a href="https://ranjithkumar67.wordpress.com" target="_blank">Blog</a></li>
+        <li><a href="mailto:ranjithrajendran2510@gmail.com">Email</a></li>
+      </ul>
+      <div class="footer-copy">© 2025 Ranjithkumar R · Built with passion · Hosted on Vercel / Netlify / Render</div>
+    </div>
+  </footer>
+
+  <!-- SCRIPTS -->
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/theme.js"></script>
+  <script src="assets/js/cursor.js"></script>
+  <script src="assets/js/nav.js"></script>
+  <script src="assets/js/hero.js"></script>
+  <script src="assets/js/sections.js"></script>
+  <script src="assets/js/projects.js"></script>
+  <script src="assets/js/reveal.js"></script>
+  <script src="assets/js/protect.js"></script>
+  <script src="assets/js/contact.js"></script>
+  <script src="assets/js/popup.js"></script>
+</body>
+</html>

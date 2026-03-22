@@ -1,0 +1,53 @@
+/* ═══════════════════════════════════════
+   TOKENS.CSS — Design Variables
+═══════════════════════════════════════ */
+:root {
+  /* Fonts */
+  --f-display: 'Orbitron', sans-serif;
+  --f-body:    'Rajdhani', sans-serif;
+  --f-mono:    'JetBrains Mono', monospace;
+
+  /* DARK (default) */
+  --bg-0:      #040810;
+  --bg-1:      #080f1a;
+  --bg-2:      #0d1628;
+  --bg-card:   #0a1220;
+  --bg-glass:  rgba(10,18,32,0.82);
+  --border:    rgba(0,212,255,0.13);
+  --border-hl: rgba(0,212,255,0.45);
+  --text-1:    #e8f4ff;
+  --text-2:    #8baec8;
+  --text-3:    #4a6a85;
+  --accent-c:  #00d4ff;
+  --accent-o:  #ff6b35;
+  --accent-g:  #00ff88;
+  --accent-p:  #bd00ff;
+  --glow-c:    0 0 22px rgba(0,212,255,0.38);
+  --glow-o:    0 0 22px rgba(255,107,53,0.38);
+  --glow-g:    0 0 22px rgba(0,255,136,0.3);
+  --grid-ln:   rgba(0,212,255,0.035);
+  --nav-h:     68px;
+  --radius:    2px;
+  --trans:     0.25s ease;
+}
+
+[data-theme="light"] {
+  --bg-0:      #f2f6fb;
+  --bg-1:      #e8eef7;
+  --bg-2:      #dde4f0;
+  --bg-card:   #ffffff;
+  --bg-glass:  rgba(255,255,255,0.88);
+  --border:    rgba(30,80,160,0.13);
+  --border-hl: rgba(30,80,160,0.4);
+  --text-1:    #0a1628;
+  --text-2:    #2a4568;
+  --text-3:    #6a85a8;
+  --accent-c:  #0055cc;
+  --accent-o:  #cc4400;
+  --accent-g:  #007a3a;
+  --accent-p:  #7700bb;
+  --glow-c:    0 4px 18px rgba(0,85,204,0.18);
+  --glow-o:    0 4px 18px rgba(204,68,0,0.18);
+  --glow-g:    0 4px 18px rgba(0,122,58,0.15);
+  --grid-ln:   rgba(30,80,160,0.05);
+}

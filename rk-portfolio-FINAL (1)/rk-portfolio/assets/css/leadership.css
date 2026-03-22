@@ -1,0 +1,9 @@
+/* ═══ LEADERSHIP.CSS ══════════════════════ */
+.timeline { position: relative; padding-left: 2.2rem; }
+.timeline::before { content: ''; position: absolute; left: 0; top: 0; bottom: 0; width: 1px; background: linear-gradient(to bottom, var(--accent-c), var(--accent-o), transparent); }
+.tl-item { position: relative; margin-bottom: 2rem; padding: 1.7rem; background: var(--bg-card); border: 1px solid var(--border); transition: border-color 0.2s, transform 0.2s; }
+.tl-item::before { content: ''; position: absolute; left: -2.55rem; top: 1.7rem; width: 11px; height: 11px; background: var(--accent-c); border-radius: 50%; border: 2px solid var(--bg-0); box-shadow: var(--glow-c); }
+.tl-item:hover { border-color: var(--border-hl); transform: translateX(5px); }
+.tl-period { font-family: var(--f-mono); font-size: 0.63rem; color: var(--accent-c); letter-spacing: 0.12em; text-transform: uppercase; margin-bottom: 0.4rem; }
+.tl-role { font-family: var(--f-display); font-weight: 700; font-size: 0.98rem; color: var(--text-1); margin-bottom: 0.2rem; }
+.tl-org { font-size: 0.82rem; color: var(--text-3); font-weight: 300; }
